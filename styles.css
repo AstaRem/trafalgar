@@ -1,9 +1,1 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 1000
-
-.mulish-<uniquifier> {
-  font-family: "Mulish", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+*{margin:0;padding:0}
