@@ -13,6 +13,7 @@ $dark-text-color: #7D7987;
 $title-color: #000000;
 $gradient-start-color: #5A98F2;
 $gradient-end-color: #67C3F3;
+$dots-inactive-color: #458FF680;
 $background: #FFFFFF;
 
 
@@ -80,12 +81,14 @@ main {
   max-width: 1300px;
   h2 {
     font-size: 24px;
+    margin: 20px;
   }
   h3 {
     font-size: 18px;
   }
   p{
     font-size: 16px;
+    margin: 10px;
   }
   .section-description  {
     font-size: 18px;
@@ -209,6 +212,18 @@ header {
   }
 }
 
+div.separator {
+  width: 56px;
+  height: 2px;
+  background-color: $dark-text-color;
+  margin: 20px 0;
+}
+
+div.separator-light {
+  background-color: $white-text-color;
+  
+}
+
 
 //nesting too deep makes the code hard to read, track and debug,. Write not more than 2-3 levels deep only.
 
@@ -237,13 +252,6 @@ header {
     //   font-size: 18px;
     //   font-weight: 400;
     // }
-  }
-
-  .separator {
-    width: 56px;
-    height: 2px;
-    background-color: $dark-text-color;
-    margin: 20px 0;
   }
 
   .services-cards-container {
@@ -279,3 +287,112 @@ header {
   }
 
 }
+// healthcare providers section
+main section.healthcare-providers {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+    .healthcare-providers-text-container {
+      width: 60%;
+    }
+    .healthcare-img {
+      width: 40%;
+        img{
+          width: 100%;
+        } 
+      }
+      }
+
+
+
+//download apps section
+main section.download-apps {
+display: flex;
+flex-direction: row;
+justify-items: center;
+
+  .download-text-container {
+    width: 60%;
+  }
+  .download-img {
+    width: 40%;
+      img{
+        width: 100%;
+      } 
+    }
+  }
+
+  // customers-saying-container
+section.testimonials-wrapper {
+  display: flex;
+  .testimonials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient($gradient-end-color, $gradient-start-color);
+    color: $white-text-color;  
+    padding: 30px;
+    border-radius: 15px;
+    }
+    h2{
+      color: $white-text-color;
+    }
+    .separator{
+      background-color: $white-text-color;
+    }
+    .testimonials-text-container {
+      display: flex;
+      flex-direction: row;
+       .image-name {
+        display: flex;
+          div {
+          img {
+            background-color:$gradient-start-color;
+            border-radius: 50%;
+          }
+        }
+       }
+    }
+
+      .dot-container {
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+
+        .dot {
+          width:10px;
+          height: 10px;
+          background-color:$dots-inactive-color;
+          border-radius: 50%;
+        }
+
+        div:nth-child(2) {
+          margin-left: 35px;
+          background-color: $accent-color;
+        }
+
+        div:nth-child(5) {
+          margin-right: 35px;
+        }
+
+        // changing hte color of svg shape - fill
+        .left-arrow path {
+          fill: $dots-inactive-color;
+        }
+
+        .right-arrow path {
+          fill: $accent-color;
+        }
+      //  removes all default styling from <button>
+        button {
+          all: unset;
+          cursor: pointer;
+        }
+
+
+      }
+
+}
+    
