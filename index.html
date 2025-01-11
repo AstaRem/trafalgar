@@ -12,15 +12,15 @@
 <body>
     <div class="page-wrapper">
         <header>
-            <div class="top-nav-container debug">
-                <div class="logo-container debug"> 
+            <div class="top-nav-container ">
+                <div class="logo-container "> 
                     <div class="logo">
                         <img src="images/logo.svg" alt="logo"/>
                     </div> 
                     <h2>Trafalgar</h2>  
                 </div>
         
-                <nav class="top-nav debug">
+                <nav class="top-nav debg" aria-label="Main site navigation">
                     <ul >
                         <li><a href="" class="active-link">Home</a></li>
                         <li><a href="">Find a doctor</a></li>
@@ -31,7 +31,7 @@
                 </nav>
             </div>
 
-            <div class="hero-container debug">
+            <div class="hero-container ">
                 <div class="hero-text-container ">
                     <h1>Virtual healthcare for you</h1>
                     <p>Trafalgar provides progressive, and affordable 
@@ -196,96 +196,142 @@
                     </div>
             </section>
 
-            <section>
+            <section class="latest-article">
+
                 <h2>Check our latest article</h2>
                 <div class="separator"></div>
 
 
                 <div class="article-card-container">
+
                     <div class="article-card">
-                        <h2>Disease detection, check 
-                            up in the laboratory</h2>
-                        <p>In this case, the role of the health laboratory is very important to do
-                            a disease detection...</p>
-                        <div>Read more</div>
-                    </div>
-                </div>
+                        <div class="article-img">
+                            <img src="./images/images-for-articles/disease-check.jpg" alt="">
+                        </div>
+                        
+                        <div class="article-card-text">
+                            <h3>Disease detection, check 
+                                up in the laboratory</h3>
+                            <p>In this case, the role of the health laboratory is very important to do
+                                a disease detection...</p>
+                            <div class="read-more">
+                                <a href="#">
+                                    <div>Read more </div>
+                                    <div>&#8594;</div> 
+                                
+                                </a>   
+                            </div>
+                        </div>
+                     </div>
+                
 
 
-                <div class="article-card-container">
+                <!-- <div class="article-card-container"> -->
                     <div class="article-card">
-                        <h2>Herbal medicines that are 
-                            safe for consumption</h2>
-                        <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
-                        <div>Read more</div>
-                    </div>
-                </div>
+                        <div class="article-img">
+                            <img src="./images/images-for-articles/herbal-medicines.jpg" alt="">
+                        </div>
 
-                <div class="article-card-container">
+                        <div class="article-card-text">
+                            <h3>Herbal medicines that are 
+                                safe for consumption</h3>
+                            <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                            <div class="read-more">
+                                <a href="#">
+                                    <div>Read more </div>
+                                    <div>&#8594;</div> 
+                                </a>   
+                            </div>
+    
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+                <!-- <div class="article-card-container"> -->
                     <div class="article-card">
-                        <h2>Natural care for healthy 
-                            facial skin</h2>
-                        <p>A healthy lifestyle should start from now and also for your skin health.
-                            There are some...</p>
-                        <div>Read more</div>
-                    </div>
-                </div>
-
+                        <div class="article-img">
+                            <img src="./images/images-for-articles/natural-care.jpg" alt="">
+                        </div>
+                        <div class="article-card-text">
+                            <h3>Natural care for healthy 
+                                facial skin</h3>
+                            <p class="article-p">A healthy lifestyle should start from now and also for your skin health.
+                                There are some...</p>
+                                <div class="read-more">
+                                    <a href="#">
+                                        <div>Read more </div>
+                                        <div>&#8594;</div> 
+                                    
+                                    </a>   
+                                </div>
+                            </div>
+    
+                        </div>
+                <!-- </div> -->
+            </div>
                 <div class="ordinary-button">View all</div>
-
+            
             </section>
 
         </main>
 
-        <footer>
-            <div>
-                <div>Logo</div>
-                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
-                    for everyone</p>
-                <p>&copy;Trafalgar PTY LTD 2020. All rights reserved</p>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-description-container">
+            <div class="logo-container "> 
+                <div class="logo invert-logo ">
+                    <img src="./images/logo/invert-logo.svg" alt="logo"/>
+                </div> 
+                <h2>Trafalgar</h2>  
             </div>
 
+            <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+                for everyone</p>
+            <p>&copy;Trafalgar PTY LTD 2020. All rights reserved</p>
+        </div>
+
+        <div>
+            <h3>Company</h3>
             <div>
-                <h3>Company</h3>
-                <div>
+                <nav aria-label="Footer site navigation">
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Find a doctor</a></li>
                         <li><a href="#">Apps</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
+        </div>
 
+        <div>
+            <h3>Region</h3>
             <div>
-                <h3>Region</h3>
-                <div>
-                    <ul>
-                        <li><a href="#">Indonesia</a></li>
-                        <li><a href="#">Singapore</a></li>
-                        <li><a href="#">Hongkong</a></li>
-                        <li><a href="#">Canada</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a href="#">Indonesia</a></li>
+                    <li><a href="#">Singapore</a></li>
+                    <li><a href="#">Hongkong</a></li>
+                    <li><a href="#">Canada</a></li>
+                </ul>
             </div>
+        </div>
 
+        <div>
+            <h3>Help</h3>
             <div>
-                <h3>Help</h3>
-                <div>
-                    <ul>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact support</a></li>
-                        <li><a href="#">Instructions</a></li>
-                        <li><a href="#">How it works</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact support</a></li>
+                    <li><a href="#">Instructions</a></li>
+                    <li><a href="#">How it works</a></li>
+                </ul>
             </div>
-
-
-        </footer>
-
+        </div>
 
     </div>
-    
+    </footer>
+
 </body>
 </html>

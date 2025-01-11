@@ -71,6 +71,10 @@ main {
   }
 }
 
+section {
+  margin-bottom: 100px
+}
+
 h1,
 h2, 
 h3 {
@@ -81,14 +85,14 @@ main {
   max-width: 1300px;
   h2 {
     font-size: 24px;
-    margin: 20px;
+    // margin: 20px;
   }
   h3 {
     font-size: 18px;
   }
   p{
     font-size: 16px;
-    margin: 10px;
+    // margin: 10px;
   }
   .section-description  {
     font-size: 18px;
@@ -155,6 +159,7 @@ header {
 
           &:hover {
             color: $title-color;
+            font-weight: 700;
           }
         }
       }
@@ -216,7 +221,7 @@ div.separator {
   width: 56px;
   height: 2px;
   background-color: $dark-text-color;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 div.separator-light {
@@ -292,6 +297,7 @@ main section.healthcare-providers {
   display: flex;
   flex-direction: row;
   justify-items: center;
+  gap: 60px;
     .healthcare-providers-text-container {
       width: 60%;
     }
@@ -310,6 +316,8 @@ main section.download-apps {
 display: flex;
 flex-direction: row;
 justify-items: center;
+gap: 60px;
+
 
   .download-text-container {
     width: 60%;
@@ -331,7 +339,7 @@ section.testimonials-wrapper {
     align-items: center;
     background-image: linear-gradient($gradient-end-color, $gradient-start-color);
     color: $white-text-color;  
-    padding: 30px;
+    padding: 50px 30px;
     border-radius: 15px;
     }
     h2{
@@ -343,9 +351,21 @@ section.testimonials-wrapper {
     .testimonials-text-container {
       display: flex;
       flex-direction: row;
+      align-items: center;
+        & > * {
+          padding: 20px;
+        }
        .image-name {
         display: flex;
+        width: 40%;
+        align-items: center;
           div {
+          p:nth-child(1) {
+            font-weight: 600;
+          }
+          & > * {
+            margin-left: 10px;
+          }
           img {
             background-color:$gradient-start-color;
             border-radius: 50%;
@@ -354,12 +374,16 @@ section.testimonials-wrapper {
        }
     }
 
+    .testimonials-text-container div.testimonials-text {
+      width: 60%;
+    }
+
       .dot-container {
         display: flex;
         width: 30%;
         justify-content: space-around;
         align-items: center;
-        margin: 20px;
+        margin: 30px;
 
         .dot {
           width:10px;
@@ -385,14 +409,117 @@ section.testimonials-wrapper {
         .right-arrow path {
           fill: $accent-color;
         }
-      //  removes all default styling from <button>
+      //  removes all default styling from <button>. It does not remove functionality of a button..
         button {
           all: unset;
           cursor: pointer;
         }
-
-
       }
-
 }
     
+.article-card-container .read-more a{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: $accent-color;
+  font-weight:600;
+  height: 20px;
+  margin-top: 10px;
+    div:nth-child(1){
+      padding-right: 10px;
+    }
+}
+
+.article-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  .article-card{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    width: 290px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+    .article-img {
+      width: 270px;
+      border-radius: 0 15px 15px 0;
+        img {
+          width: 100%;
+          object-fit:cover;
+        }
+    }
+
+      .article-card-text {
+        display: flex;
+        flex-direction: column; 
+        padding: 30px;
+        justify-content: space-between;
+        height: 100%;
+
+          .article-p {
+            padding: 0;
+          }
+      }
+
+    }
+  }
+
+// footer
+footer {
+  width: 100%;
+  background-image: linear-gradient($gradient-end-color, $gradient-start-color);
+  display: flex;
+  justify-content: center;
+}
+.footer-container {
+  // max-width: 1300px;
+  font-weight:300;
+  width: 100%;
+  color: $white-text-color;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+       .logo {
+        margin-right: 20px;
+       }
+    }
+    li {
+      margin: 15px 0;
+
+    }
+  
+  & > div {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    padding: 20px;
+
+    & > * {
+      margin: 10px;
+    }
+  }
+    h2, h3, a {
+      color: $white-text-color;
+    }
+    li {
+      list-style: none;
+    }
+    .footer-description-container {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+       }
+
+    }
+
+
+
