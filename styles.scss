@@ -11,7 +11,7 @@ $accent-color: #458FF6;
 $white-text-color: #FFFFFF;
 $dark-text-color: #7D7987;
 $title-color: #000000;
-$gradient-start-color: #5A98F2;
+$gradient-start-color: #5B9BF3;
 $gradient-end-color: #67C3F3;
 $dots-inactive-color: #458FF680;
 $background: #FFFFFF;
@@ -118,6 +118,14 @@ p {
   margin: 30px;
 }
 
+.dot-group-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  img {
+    width: 100%;
+  }
+}
 
 // header
 header {
@@ -172,6 +180,15 @@ header {
     height: 720px;
     margin: 10px 20px;
     position: relative;
+
+    #dot-group-img-hero {
+      position: absolute;
+      // margin: -50px;
+      top: 50px;
+      left: -300px;
+      // transform: translateX(-200px);
+    
+    }
 
     .hero-img {
       margin-top: 30px;
@@ -234,12 +251,25 @@ div.separator-light {
 
 // section services container
 
+
+
 .services-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  position: relative;
+  
+  // #dot-group-img-services {
+  //   position: absolute;
+  //   top: 270px;
+  //   right: 410px;
+  //   // color: red;
+  //   z-index: -1;
+  // }
+
+
 
   .services-container-text {
     display: flex;
@@ -267,9 +297,10 @@ div.separator-light {
     row-gap: 37px;
     margin-top: 50px;
     margin-bottom: 50px;
-  
+    // position: relative;
 
     .service-card{
+      z-index: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -317,6 +348,15 @@ display: flex;
 flex-direction: row;
 justify-items: center;
 gap: 60px;
+position: relative;
+
+
+#dot-group-img-download {
+  position: absolute;
+  top: 150px;
+  right: -450px;
+  // color: red;
+}
 
 
   .download-text-container {
@@ -333,6 +373,17 @@ gap: 60px;
   // customers-saying-container
 section.testimonials-wrapper {
   display: flex;
+  position: relative;
+
+  #dot-group-img-testimonials {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    // color: red;
+    // z-index: -1;
+  }
+  
+
   .testimonials-container{
     display: flex;
     flex-direction: column;
@@ -474,6 +525,16 @@ footer {
   background-image: linear-gradient($gradient-end-color, $gradient-start-color);
   display: flex;
   justify-content: center;
+  position: relative;
+
+  #dot-group-img-footer {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: -10px;
+    left: -10px;
+  }
+
 }
 .footer-container {
   // max-width: 1300px;
@@ -481,8 +542,7 @@ footer {
   width: 100%;
   color: $white-text-color;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 
     .logo-container {
       display: flex;
